@@ -20,12 +20,18 @@
   <body>
     <nav
       style="background-image: linear-gradient(to bottom, #1a2740, #0d1b2a)"
-      class="flex justify-between py-3 pl-5 items-center fixed top-0 left-0 right-0 z-10 "
+      class="flex justify-between py-3 pl-5 items-center fixed top-0 left-0 right-0 z-10"
     >
       <a class="group cursor-pointer" href="#" id="logo">
-        <img src="./src/astronaut_4698812.png" alt="Your Logo" class="h-16" />
+        <img
+          src="./src/astronaut_4698812.png"
+          alt="Your Logo"
+          class="h-12 sm:h-16"
+        />
       </a>
-      <div class="flex space-x-4 text-white text-md font-orbitron gap-10 pr-10">
+      <div
+        class="flex space-x-4 text-white text-sm sm:text-md font-orbitron gap-5 sm:gap-10 pr-5 sm:pr-10"
+      >
         <a
           href="#home"
           id="nav-home"
@@ -48,40 +54,45 @@
     </nav>
     <section
       style="background-image: linear-gradient(to bottom, #1a2740, #0d1b2a)"
-      class="flex justify-between items-center pt-28 md:pt-24 lg:pt-20 relative"
+      class="flex flex-col sm:flex-row justify-between items-center pt-20 sm:pt-28 md:pt-24 lg:pt-20 px-4 sm:px-20 relative"
       id="home"
     >
-      <div class="flex flex-col sm:gap-2 md:gap-3 lg:gap-6 font-orbitron pl-20 ">
-        <div class="text-3xl md:text-4xl lg:text-6xl font-bold text-yellow-400">
-          Exploring till the End  
+      <div class="flex flex-col sm:gap-2 md:gap-3 lg:gap-6 font-orbitron">
+        <div
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-yellow-400"
+        >
+          Exploring till the End of
         </div>
-        <div class="text-3xl md:text-4xl lg:text-6xl font-bold text-purple-400">
-          <span class="text-3xl md:text-4xl lg:text-6xl  font-bold text-yellow-400">of</span> The
-          Universe
+        <div
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-purple-400"
+        >
+          The Universe
         </div>
         <div class="flex flex-col gap-1">
-          <div class="text-md md:text-lg lg:text-2xl text-white">Welcome to my Portfolio</div>
-          <div class="text-md md:text-lg lg:text-2xl text-white">
+          <div class="text-sm sm:text-md md:text-lg lg:text-2xl text-white">
+            Welcome to my Portfolio
+          </div>
+          <div class="text-sm sm:text-md md:text-lg lg:text-2xl text-white">
             Where innovation meets imagination
           </div>
-          <div class="sm:mt-3 md:mt-5 lg:mt-7 flex">
+          <div class="mt-3 flex">
             <div
-              class="text-md md:text-lg lg:text-2xl text-black font-bold bg-yellow-400 px-4 md:px-8 lg:px-16 py-2 md:py-3 lg:py-5 rounded-xl hover:bg-yellow-300 hover:border-yellow-400 transition duration-300 ease-in-out group cursor-pointer"
+              class="text-sm sm:text-md md:text-lg lg:text-2xl text-black font-bold bg-yellow-400 px-4 md:px-8 lg:px-16 py-2 md:py-3 lg:py-5 rounded-xl hover:bg-yellow-300 hover:border-yellow-400 transition duration-300 ease-in-out group cursor-pointer"
             >
               Discover More
             </div>
           </div>
         </div>
       </div>
-      <div class="blend-lighten">
+      <div class="blend-lighten shrink mt-8 sm:mt-0">
         <img
           src="src/view-3d-space-rocket-model.jpg"
-          class="h-auto max-w-sm md:max-w-md lg:max-w-2xl"
+          class="h-auto max-w-full sm:max-w-xs md:max-w-sm lg:max-w-2xl"
           alt="Rocket Image"
         />
       </div>
       <a
-        class="absolute bottom-0 left-1/2 text-blue-900 group cursor-pointer transition duration-300 ease-in-out"
+        class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-blue-900 group cursor-pointer transition duration-300 ease-in-out"
         href="#about"
         id="scroll-arrow"
       >
@@ -91,7 +102,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-14 h-14 animate-bounce"
+          class="w-8 h-8 sm:w-14 sm:h-14 animate-bounce"
         >
           <path
             stroke-linecap="round"
@@ -104,35 +115,38 @@
 
     <section
       style="background-image: linear-gradient(to bottom, #1a2740, #0d1b2a)"
-      class="flex justify-evenly items-center"
+      class="flex flex-col sm:flex-row justify-evenly items-center py-12"
       id="about"
     >
       <div class="flex justify-center items-center pr-0 md:pr-0 lg:pr-20">
         <img
           src="src/pngwing.com (1).png"
-          class="h-auto max-w-md md:max-w-xl lg:max-w-3xl"
-          alt="Avt"
+          class="h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl"
+          alt="Avatar"
         />
       </div>
-      <div class="flex flex-col sm:gap-2 md:gap-3 lg:gap-6 font-orbitron pr-3 md:pr-5 lg:pr-20">
-        <div class="text-3xl md:text-4xl lg:text-6xl font-bold text-yellow-400">About Me</div>
+      <div
+        class="flex flex-col sm:gap-2 md:gap-3 lg:gap-6 font-orbitron pr-3 md:pr-5 lg:pr-20 pl-5 md:pl-0"
+      >
+        <div
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-yellow-400"
+        >
+          About Me
+        </div>
         <div class="flex flex-col gap-3">
-          <div class="text-md md:text-lg lg:text-2xl text-white">
-            Hi, I`m Khang, a 18-year-old from VietNam and currently studying
-            <span class="text-md md:text-lg lg:text-2xl text-yellow-400 font-extrabold">
-              Computer Science
-              <span class="font-normal text-white">
-                at Ho Chi Minh City University of Pedagogy.
-              </span>
-            </div>
-          </span>
-
-          <div class="text-md md:text-lg lg:text-2xl text-white">
-            I have 1 year of experience in C++, 4 months of experience in HTML
-            CSS and JavaScript.
+          <div class="text-sm sm:text-md md:text-lg lg:text-2xl text-white">
+            Hi, I'm Khang, an 18-year-old from Vietnam and currently studying
+            <span class="text-yellow-400 font-extrabold">Computer Science</span>
+            <span class="font-normal text-white">
+              at Ho Chi Minh City University of Pedagogy.
+            </span>
           </div>
-          <div class="text-md md:text-lg lg:text-2xl text-white">
-            I also have a solid understanding of DBMS, DSA and a little bit of
+          <div class="text-sm sm:text-md md:text-lg lg:text-2xl text-white">
+            I have 1 year of experience in C++, 4 months of experience in HTML,
+            CSS, and JavaScript.
+          </div>
+          <div class="text-sm sm:text-md md:text-lg lg:text-2xl text-white">
+            I also have a solid understanding of DBMS, DSA, and a little bit of
             UI/UX Design.
           </div>
         </div>
@@ -145,53 +159,59 @@
       id="portfolio"
     >
       <div class="flex flex-col gap-6 font-orbitron items-center">
-        <div class="text-3xl md:text-4xl lg:text-6xl font-bold text-yellow-400">My Projects</div>
-        <div>
-          <div class="text-3xl md:text-4xl lg:text-6xl text-white">Currently have no project</div>
+        <div
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-yellow-400"
+        >
+          My Projects
         </div>
-        
+        <div>
+          <div class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-white">
+            Currently have no project
+          </div>
+        </div>
       </div>
-      <div class="h-auto max-w-sm md:max-w-md lg:max-w-lg">
+      <div class="h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mt-8">
         <img
-          src="src/—Pngtree—realistic astronaut illustration_8999483.png" 
-          class="h-auto max-w-sm md:max-w-md lg:max-w-lg"
+          src="src/—Pngtree—realistic astronaut illustration_8999483.png"
+          class="h-auto max-w-full"
+          alt="Astronaut"
         />
       </div>
     </section>
 
-    <div
+    <footer
       style="background-image: linear-gradient(to bottom, #1a2740, #0d1b2a)"
       class="flex justify-center py-4 font-orbitron"
     >
       <div class="flex flex-col items-center justify-center">
-        <div class="text-md text-white">
+        <div class="text-sm text-white text-center">
           © 2024 Phan Tuan Khang. All Rights Reserved.
         </div>
-        <div class="flex gap-5">
+        <div class="flex gap-5 mt-2">
           <a
-            class="text-md text-yellow-400 group cursor-pointer hover:text-yellow-300 hover:underline transition duration-300 ease-in-out"
+            class="text-sm text-yellow-400 group cursor-pointer hover:text-yellow-300 hover:underline transition duration-300 ease-in-out"
             href="https://github.com/khangdepzaivodich"
             target="_blank"
           >
             GitHub
           </a>
           <a
-            class="text-md text-yellow-400 group cursor-pointer hover:text-yellow-300 hover:underline transition duration-300 ease-in-out"
+            class="text-sm text-yellow-400 group cursor-pointer hover:text-yellow-300 hover:underline transition duration-300 ease-in-out"
             href="https://www.facebook.com/profile.php?id=100089034453474"
             target="_blank"
           >
             Facebook
           </a>
           <a
-            class="text-md text-yellow-400 group cursor-pointer hover:text-yellow-300 hover:underline transition duration-300 ease-in-out"
+            class="text-sm text-yellow-400 group cursor-pointer hover:text-yellow-300 hover:underline transition duration-300 ease-in-out"
             href="https://www.youtube.com/@blackc7396"
             target="_blank"
           >
-            Youtube
+            YouTube
           </a>
         </div>
       </div>
-    </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
