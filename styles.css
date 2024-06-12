@@ -1,0 +1,9 @@
+.font-orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+.blend-lighten {
+  mix-blend-mode: lighten;
+}
+.grayscale {
+  filter: grayscale(100%);
+}
