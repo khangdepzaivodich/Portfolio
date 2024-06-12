@@ -31,18 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-  // Observe each section
   sections.forEach((section) => {
     observer.observe(section);
   });
 
-  // Click event for logo
   const logo = document.getElementById("logo");
   logo.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
+    event.preventDefault();
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
     });
     removeActiveClasses();
     const homeLink = document.querySelector(`nav a[href="#home"]`);
