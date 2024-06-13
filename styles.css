@@ -1,3 +1,8 @@
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #1a2740;
+}
 .font-orbitron {
   font-family: "Orbitron", sans-serif;
 }
@@ -7,7 +12,14 @@
 .grayscale {
   filter: grayscale(100%);
 }
-html,
-body {
-  scroll-behavior: smooth;
+
+.hide {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
